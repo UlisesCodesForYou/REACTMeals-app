@@ -8,7 +8,7 @@ const MealItemForm = (props) => {
   const amountInputRef = useRef();
 
   const submitHandler = (event) => {
-    event.preventDefault(); // This makes sure that the browser default logic to reload the page is prevented.
+    event.preventDefault(); // This makes sure that the browser does not submit the form automatically 
 
     const enteredAmount = amountInputRef.current.value; //When using refs, it's always .current! Also, .value is always a string
 

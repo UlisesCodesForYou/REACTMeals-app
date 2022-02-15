@@ -40,7 +40,7 @@ const AvailableMeals = (props) => {
     };
 
     menuFetcher().catch((error) => {
-      // This error function is responsible of handling any errors.
+      // This (error) function is responsible of handling any errors.
       setIsLoading(false);
       error(error.message);
     });
