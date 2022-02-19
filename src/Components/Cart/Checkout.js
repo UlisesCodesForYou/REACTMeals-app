@@ -43,7 +43,6 @@ const Checkout = (props) => {
       nameIsValid && streetIsValid && postalIsValid && cityIsValid; // This form checks if all the valid variables are valid.
 
     if (!formIsValid) {
-      // Data goes here.
       return;
     }
     props.onConfirm({
